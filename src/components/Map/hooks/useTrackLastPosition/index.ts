@@ -1,0 +1,1 @@
+export { useTrackLastPosition } from './useTrackLastPosition';

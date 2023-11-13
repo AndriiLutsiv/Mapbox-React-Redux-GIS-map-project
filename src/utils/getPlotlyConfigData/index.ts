@@ -1,0 +1,1 @@
+export {getPlotlyConfigData} from './getPlotlyConfigData';

@@ -1,0 +1,50 @@
+.tag {
+  padding: 10px 16px;
+  border: 1px solid var(--field-border);
+  border-radius: 8px;
+  background: var(--gray25);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  display: flex;
+  gap: 8px;
+  margin-left: 8px;
+
+  &:first-of-type {
+    margin-left: 20px;
+  }
+
+  p {
+    margin: 0;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--text-regular);
+    margin-left: 3px;
+    display: inline-flex;
+
+    span {
+      display: block;
+      white-space: nowrap;
+      max-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+.actionBtn {
+  background: transparent;
+  cursor: pointer;
+  border: unset;
+  display: block;
+}

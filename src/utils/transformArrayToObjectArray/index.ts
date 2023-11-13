@@ -1,0 +1,1 @@
+export {transformArrayToObjectArray} from './transformArrayToObjectArray';

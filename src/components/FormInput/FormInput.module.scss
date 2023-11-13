@@ -1,0 +1,39 @@
+.formInput {
+    width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.label {
+    color: var(--text-regular);
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.formInput input {
+    width: 100%;
+    color: var(--text-regular);
+    border-radius: 8px;
+    border: 1px solid var(--field-border);
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 14px;
+    background: transparent;
+    margin-bottom: 5px;
+
+    &::placeholder {
+        color: var(--text-placeholder);
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.errorText {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-secondary);
+}

@@ -1,0 +1,17 @@
+.resizableContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .resizableHeader {
+    flex: 1;
+    margin-right: 10px;
+    background-color: lightgrey; // Just for visual separation, remove if not needed
+  }
+  
+  .fixedColumn {
+    flex: 1;
+    background-color: lightblue; // Just for visual separation, remove if not needed
+  }
+  

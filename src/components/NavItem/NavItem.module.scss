@@ -1,0 +1,69 @@
+.navItem {
+    position: relative;
+    display: block;
+    height: 48px;
+    width: 48px;
+    border-radius: 6px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &.active,
+    &:hover {
+        background: var(--nav-item-hover);
+    }
+}
+
+.iconContainer {
+    width: 24px;
+    height: 24px;
+
+    & svg {
+        width: 100%;
+    }
+}
+
+.pointer {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    padding: 8px 12px;
+    white-space: nowrap;
+    border-radius: 8px;
+    background: var(--bg-element);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--text-regular);
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: -4px;
+        transform: rotate(45deg);
+        background: var(--bg-element);
+        height: 12px;
+        width: 12px;
+        border-radius: 1px;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

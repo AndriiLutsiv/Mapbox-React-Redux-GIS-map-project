@@ -1,0 +1,27 @@
+.userAvatar {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 24px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &:hover,
+    &.active {
+        border: 2px solid var(--nav-item-hover);
+    }
+}
+
+.button {
+    background: var(--primary);
+    color: var(--text-regular);
+    padding: 4px;
+    border-radius: 5px;
+}

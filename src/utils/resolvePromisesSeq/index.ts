@@ -1,0 +1,1 @@
+export {resolvePromisesSeq} from './resolvePromisesSeq';

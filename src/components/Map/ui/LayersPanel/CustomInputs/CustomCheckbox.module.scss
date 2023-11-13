@@ -1,0 +1,79 @@
+.input {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+  width: auto;
+  margin-right: auto;
+
+  input {
+    display: none;
+  }
+
+  input:checked + .inputCheckmark .checkmarkIcon,
+  input:checked + .inputRadioCheckmark .checkmarkRadioIcon {
+    opacity: 1;
+  }
+  input:checked + .inputCheckmark,
+  input:checked + .inputRadioCheckmark {
+    border-radius: 6px;
+    border: 1px solid #bb2a65;
+    background: #fdebf2;
+  }
+  input:checked + .inputRadioCheckmark {
+    border-radius: 50%;
+  }
+}
+
+.inputCheckmark,
+.inputRadioCheckmark {
+  border-radius: 6px;
+  border: 1px solid var(--bg-element);
+  background: var(--gray50);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s background ease-in-out, 0.3s border ease-in-out;
+}
+
+.inputRadioCheckmark {
+  border-radius: 50%;
+}
+
+.checkmarkIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  transition: 0.3s opacity ease-in-out;
+  opacity: 0;
+}
+
+.checkmarkRadioIcon {
+  width: 8px;
+  height: 8px;
+  background-color: #bb2a65;
+  flex-shrink: 0;
+  transition: 0.3s opacity ease-in-out;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.labelText {
+  color: var(--text-night-normal);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  margin-left: 8px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 275px;
+}
+
+.CustomCheckboxLayout {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,76 @@
+.close {
+    height: 34px;
+    width: 34px;
+    padding: 10px;
+    background: var(--bg-primary);
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 18px;
+        border-radius: 5px;
+        background: #d6d6d6;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 18px;
+        border-radius: 5px;
+        background: #d6d6d6;
+        transform: rotate(-45deg);
+    }
+}
+
+.buttonAdd {
+    padding: 10px 18px;
+    color: var(--text-button);
+    background: var(--primary);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.buttonCancel {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--field-border);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--text-regular);
+    display: block;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto 4px auto;
+}
+
+.customSpinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

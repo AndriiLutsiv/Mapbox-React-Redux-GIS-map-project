@@ -1,0 +1,38 @@
+.navigation {
+    width: var(--nav-width);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 32px 0 24px;
+    background: var(--bg-primary);
+    border-right: 1px solid var(--border);
+    z-index: 1;
+}
+
+.topSection,
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+
+    & .navItem:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 24px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}

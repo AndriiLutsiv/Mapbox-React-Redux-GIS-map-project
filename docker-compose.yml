@@ -1,0 +1,11 @@
+services:
+  app-dev:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    command: ["serve", "-s", "build"]
+    ports:
+      - "3000:3000"
+    profiles:
+      - dev

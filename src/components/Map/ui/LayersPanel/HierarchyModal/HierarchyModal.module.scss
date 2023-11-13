@@ -1,0 +1,254 @@
+.hierarchyModal {
+    width:90%;
+    min-width: 470px;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: var(--bg-propertis);
+    // background: var(--bg-primary);
+    border-radius: 15px;
+    padding: 12px;
+    transition: all 0.3s;
+    z-index: 999;
+}
+.close {
+    height: 34px;
+    width: 34px;
+    padding: 10px;
+    // background: var(--bg-primary);
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 18px;
+        border-radius: 5px;
+        background: #d6d6d6;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 18px;
+        border-radius: 5px;
+        background: #d6d6d6;
+        transform: rotate(-45deg);
+    }
+}
+.downloadButton {
+    position: relative;
+    top: -12px;
+    right: 61px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--text-button);
+    padding: 0 6px;
+    cursor: pointer;
+    background: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    z-index: 2;
+
+    button {
+        padding: 4px 0;
+    }
+
+    select {
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+.uprn {
+    width: 120px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--text-regular);
+    border: 2px solid var(--bg-propertis);
+    color: var(--bg-propertis);
+    margin-top: 20px;
+}
+
+.nodeView {
+    width: 80px;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    // margin-right: 20px;
+
+    &Line {
+        height: 100px;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    padding-bottom:38px;
+    }
+}
+
+.nodeId {
+    color: var(--text-regular);
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.node {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.hierarchySequence {
+    display: flex;
+    flex-shrink: 0;
+    flex-flow: row wrap;
+   
+}
+
+
+.prop {
+    border-radius: 0;
+    background-color: var(--text-regular);
+    border: 1px solid var(--text-regular);
+    position: relative;
+    z-index: 1;
+    font-size: 11px;
+    width: 90px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.propTop{
+  border: 44px solid transparent;
+  border-top: 0;
+  border-bottom: 20px solid var(--text-regular);
+  
+  position: absolute;
+  top: -20px;
+}
+
+.line {
+    height: 2px;
+    background-color: var(--text-regular);
+    width: 180px;
+    position: relative
+}
+
+.lineData {
+    position: absolute;
+    background-color: var(--text-regular);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    text-align: center;
+
+    span {
+        display: block;
+    }
+}
+
+.legendBlock {
+    width: 25vw;
+    min-width: 310px;
+    height: 50vh;
+    display: flex;
+    // max-height: 30vh;
+    overflow: auto;
+    column-gap: 10px;
+    background: var(--bg-propertis);
+    border-radius: 15px;
+    padding: 12px;
+    transition: all 0.3s;
+    z-index: 999;
+
+}
+
+.legendSectionBlock {
+    width: 50%;
+}
+
+.subtitle{
+    font-size: 18px;
+    color: var(--text-title);
+}
+.legendItem {
+    width: 140px;
+    height: 70px;
+    border: 1px solid var(--field-border);
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    border-bottom: unset;
+
+    &:last-child {
+    border-bottom: 1px solid var(--field-border);
+
+    }
+}
+
+.legendText {
+    font-size: 12px;
+    color: white;
+}
+.legendIcon {
+    width: 70px;
+    margin-right: 10px;
+}
+.legendButton {
+    padding: 10px 14px;
+    display: block;
+    color: var(--text-regular);
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: auto;
+    background-color: var(--field-border);
+}
+////
+/// .
+/// 
+.tableRow {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+
+    p{
+        width: 50%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}

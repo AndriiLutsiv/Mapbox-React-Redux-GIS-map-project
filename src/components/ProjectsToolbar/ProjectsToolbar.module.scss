@@ -1,0 +1,26 @@
+.projectsToolbar {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    background: var(--bg-primary);
+    height: var(--project-toolbar);
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}

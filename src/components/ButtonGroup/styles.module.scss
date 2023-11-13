@@ -1,0 +1,22 @@
+.buttonGroup {
+    border: 1px solid var(--field-border);
+    border-radius:8px ;
+    overflow: hidden;
+
+    
+
+    button {
+        border-top: unset;
+        border-bottom: unset;
+        border-radius: unset;
+        border-right: unset;
+    }
+
+    button:first-child {
+        border-left: unset;
+    }
+}
+.smallFont *{
+    font-size: 12px;
+    padding: 10px 10px;
+}

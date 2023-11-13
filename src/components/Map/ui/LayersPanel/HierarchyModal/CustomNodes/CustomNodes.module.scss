@@ -1,0 +1,22 @@
+.label {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: white;
+
+    &Input {
+        top: -30px
+    }
+}
+
+.inputNode {
+    border-radius: 6px;
+    background-color: var(--text-regular);
+    padding: 10px;
+}
+
+.handle {
+    opacity: 0;
+}

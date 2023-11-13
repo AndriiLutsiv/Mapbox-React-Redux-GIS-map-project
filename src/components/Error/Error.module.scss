@@ -1,0 +1,19 @@
+.error {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--text-title);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.errorPopUp{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 300px;
+    background-color: #D92D20;
+    padding: 10px 16px;
+}

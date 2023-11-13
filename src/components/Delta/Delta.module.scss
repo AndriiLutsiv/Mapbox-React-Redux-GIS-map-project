@@ -1,0 +1,30 @@
+.arrowBanner {
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  left: 20px;
+  top: 100%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: radial-gradient(#141414, rgba(0, 0, 0, 0));
+}
+.arr {
+  width: 30px;
+  height: 30px;
+  * {
+    stroke: red;
+  }
+}
+.rotate {
+  transform: rotate(180deg);
+  
+  * {
+    stroke: green;
+  }
+}
+
+.yellow {
+  * {
+    stroke: yellow;
+  }
+}

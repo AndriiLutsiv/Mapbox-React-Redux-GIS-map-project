@@ -1,0 +1,78 @@
+.layerItem {
+  display: flex;
+  column-gap: 8px;
+  padding: 8px 24px;
+  align-items: center;
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  transition: 0.3s background-color ease-in-out;
+
+  &:hover {
+    background-color: var(--gray50);
+  }
+
+  &:hover .controlBtn{
+    opacity: 1;
+  }
+}
+
+.nestingIcon {
+  margin-left: -16px;
+  transition: 0.3s transform ease-in-out;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+.itemIcon {
+  width: 20px;
+  height: 20px;
+}
+.layerName {
+  color: var(--text-night-normal);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.indicator {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--border);
+}
+.line {
+  height: 4px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.itemControls {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  position: absolute;
+  right: 16px;
+}
+
+.controlBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: 0.3s opacity ease-in-out;
+  opacity: 0;
+}
+
+
+.parent {
+    position: relative;
+}
+
+.children {
+    margin-left: 20px;
+}

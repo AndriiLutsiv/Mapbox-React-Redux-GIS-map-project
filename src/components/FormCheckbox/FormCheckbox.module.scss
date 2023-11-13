@@ -1,0 +1,51 @@
+.formCheckboxContainer {
+    width: 100%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: 1px solid var(--field-border);
+    border-radius: 4px;
+    transition: all 0.3s;
+
+    & input {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 1;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    &:hover {
+        background: var(--primary-semi-transparent);
+    }
+}
+
+.checkmark {
+    top: 0;
+    left: 4px;
+    position: absolute;
+    height: 10px;
+    width: 6px;
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    transform: rotate(45deg);
+    display: none;
+}
+
+.formCheckboxContainer input:checked ~ .checkmark {
+    display: block;
+}
+
+.text {
+    color: var(--text-regular);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 8px;
+}

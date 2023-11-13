@@ -1,0 +1,42 @@
+.app_light_theme {
+    //bg
+    --bg-primary: white;
+    --bg-element: #141414;
+    --bg-backdrop: rgba(52, 64, 84, 0.70);
+    --bg-propertis: rgba(0, 0, 0, 0.800);
+
+    //text
+    --text-title: black;
+    --text-regular: black;
+    --text-placeholder: black;
+    --field-border: #737373;
+    --text-button: black;
+    --text-secondary: black;
+    --text-danger: red;
+
+    //main
+    --primary: #ea347e;
+    --primary-semi-transparent: #ea347d4b;
+
+    //switcher
+    --switch: white;
+    --slider: #ccc;
+
+    //nav
+    --nav-item-hover: #d3d3d3;
+    --border: #525252;
+
+    //buttons
+    --danger: red;
+    --disabled: #ea347d4b;
+
+    //other colors
+    --gray400: #a3a3a3;
+    --gray25: black;
+    --gray50: #292929;
+    --text-night-normal: #D5D5D6;
+
+    //scroll
+    --scrollbar: black;
+    --thumb: #525252;
+}

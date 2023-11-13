@@ -1,0 +1,123 @@
+.tabButton {
+  display: block;
+  padding: 8px 12px;
+  gap: 8px;
+  border-radius: 6px;
+  color: var(--text-placeholder);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  transition: 0.3s background ease-in-out;
+
+  &Active {
+    background: var(--gray50);
+    color: var(--text-regular);
+  }
+}
+
+.tabButtonContainer {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 8px;
+  padding-bottom: 12px;
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+  background-color: var(--bg-element);
+}
+
+.tabChildrenContainer {
+  padding: 12px 0;
+}
+
+.tabContainer {
+  overflow: auto;
+  height: calc(100% - 90px);
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  padding: 0 16px;
+
+  &::-webkit-scrollbar {
+    width: 0.4em;
+    background: var(--scrollbar);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--thumb);
+    border-radius: 5px;
+  }
+}
+
+.inputLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  transition: 0.3s background-color ease-in-out;
+  padding: 0 16px;
+
+  &:hover {
+    background-color: var(--gray50);
+  }
+}
+
+.title {
+  color: var(--text-title);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.drawerSeparator {
+  margin: 16px 0;
+  border: unset;
+  background-color: var(--border);
+  width: 100%;
+  height: 1px;
+}
+
+.nestingIcon {
+  margin-left: -12px;
+  margin-right: 4px;
+  width: 8px;
+  flex-shrink: 0;
+  transition: 0.3s transform ease-in-out;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+
+.labelInd {
+  color: var(--border);
+  font-size: 12px;
+  margin: 0;
+  margin-left: auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 130%;
+    height: 1px;
+    background-color: var(--border);
+    transform: rotate(10deg) translateX(-50%);
+    position: absolute;
+    top: 9px;
+    left: 50%;
+  }
+}
+
+.childItem {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  justify-content: space-between;
+  transition: 0.3s opacity ease-in-out;
+
+  &.opacity {
+    opacity: 0.5;
+  }
+}

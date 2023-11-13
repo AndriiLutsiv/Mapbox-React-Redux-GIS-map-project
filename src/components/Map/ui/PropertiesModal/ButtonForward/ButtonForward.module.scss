@@ -1,0 +1,46 @@
+.buttonForward {
+    width: 80px;
+    padding: 4px 6px;
+    background: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: relative;
+    border: 1px solid transparent;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 1;
+    visibility: hidden;
+    cursor: default;
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+
+        &.disabled {
+            cursor: default;
+            background: var(--bg-primary);
+            border: 1px solid var(--primary);
+            pointer-events: none;
+
+            & .buttonName {
+                color: var(--primary);
+            }
+        }
+    }
+}
+
+.buttonName {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--text-button);
+}
+
+.list {
+    top: calc(100% + 10px);
+    right: 0;
+}

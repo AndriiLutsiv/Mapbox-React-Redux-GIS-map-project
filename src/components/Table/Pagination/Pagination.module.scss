@@ -1,0 +1,40 @@
+
+.pagination {
+    background: var(--bg-element);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border: 1px solid var(--border);
+    border-top: unset;
+    border-radius: 0 0 12px 12px;
+    position: sticky;
+    left: 0;
+
+    &Text {
+        color: var(--text-secondary);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+        margin: 0;
+    }
+
+    &Button{
+        color: var(--text-secondary);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 142.857% */
+        padding: 8px 14px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        margin-left: 12px;
+        cursor: pointer;
+    }
+}
+
+.buttons {
+    display: flex;
+    column-gap: 12px;
+}

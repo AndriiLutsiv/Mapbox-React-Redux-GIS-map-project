@@ -1,0 +1,33 @@
+.breadCrumbs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.crumbsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.crumb {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    margin-right: 40px;
+
+    &.active {
+        color: var(--primary);
+    }
+
+    &:not(:last-child):after {
+        content: '>';
+        position: absolute;
+        right: -25px;
+        color: var(--text-secondary);
+        pointer-events: none;
+        cursor: none;
+    }
+}

@@ -1,0 +1,29 @@
+.tabs {
+    &Header {
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        
+
+        &Left {
+            justify-content: flex-end;
+        }
+    }
+
+    &HeaderScrolled > div {
+        white-space: nowrap;
+        overflow-x: scroll;
+
+        
+    }
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    
+}
+
+.bodyScrolled {
+    overflow: scroll;
+    width: 100%;
+}

@@ -1,0 +1,45 @@
+.list {   
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s;
+    visibility: hidden;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    overflow: hidden;
+    height: fit-content;
+    width: fit-content;
+    min-width: 300px;
+    z-index: 2;
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &.scrollable {
+        max-height: 200px;
+        overflow-y: scroll;
+        
+        &::-webkit-scrollbar {
+            width: 0.4em;
+            background: var(--scrollbar);
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--thumb);
+            border-radius: 5px;
+        }
+    }
+}
+
+.listItem {
+    color: var(--text-regular);
+    padding: 8px 0;
+    font-size: 14px;
+    transition: all 0.3s;
+    text-wrap: nowrap;
+
+    &:hover {
+        background: var(--gray50);
+    }
+}

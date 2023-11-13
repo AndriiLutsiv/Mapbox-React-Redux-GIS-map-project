@@ -1,0 +1,43 @@
+.app_dark_theme {
+    //bg
+    --bg-primary: #000;
+    --bg-element: #141414;
+    --bg-backdrop: rgba(52, 64, 84, 0.70);
+    --bg-propertis: rgba(0, 0, 0, 0.800);
+
+    //text
+    --text-title: #fcfcfc;
+    --text-regular: #f5f5f5;
+    --text-placeholder: #d6d6d6;
+    --field-border: #737373;
+    --text-button: black;
+    --text-secondary: #e5e5e5;
+
+    --text-danger: red;
+
+    //main
+    --primary: #ea347e;
+    --primary-semi-transparent: #ea347d4b;
+
+    //switcher
+    --switch: black;
+    --slider: #6a6a6a;
+
+    //nav
+    --nav-item-hover: #787878;
+    --border: #525252;
+
+    //buttons
+    --danger: red;
+    --disabled: #ea347d4b;
+
+    //other colors
+    --gray400: #a3a3a3;
+    --gray25: black;
+    --gray50: #292929;
+    --text-night-normal: #D5D5D6;
+
+    //scroll
+    --scrollbar: black;
+    --thumb: #525252;
+}

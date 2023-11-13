@@ -1,0 +1,44 @@
+.shareMapView {
+    width: 124px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--text-button);
+    padding: 10px 18px;
+    cursor: pointer;
+    background: var(--primary);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: relative;
+}
+
+.clipBoardText {
+    position: absolute;
+    top: -96%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gray50);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: var(--text-regular);
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    cursor: default;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
